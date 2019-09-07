@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>西條翼のポートフォリオ</title>
+  <link rel="stylesheet" href="css/stylesheet_portfolio.css">
+  <!-- <link rel="text/javascript" href="/css/stylesheet.js"> -->
+  <script src="https://kit.fontawesome.com/63bee99ef6.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="header-lists">
+        <li class="header-list"><a class="header-link" href="#top">Top</a></li>
+        <li class="header-list"><a class="header-link" href="#profile">Profile</a></li>
+        <li class="header-list"><a class="header-link" href="#comment">Comment</a></li>
+        <li class="header-list"><a class="header-link" href="#sns">SNS</a></li>
+        <li class="header-list"><a class="header-link" href="#inquiry">Inquiry</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main-page" name="top" id="top">
+    <h1 class="heading">Who is Saijo Tsubasa?</h1>
+  </div>
+
+  <div class="profile" id="profile">
+    <div class="container">
+      <div class="title">
+        <div class="title-left"></div>
+        <div class="title-right">
+          <h1 class="title-heading">Profile</h1>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <img class="myself" src="img/myself.jpg">
+      <ul class="informations">
+        <li>
+          <div class="information">
+            <h1 class="item">NAME</h1>
+            <p class="answer">西條翼（Saijo Tsubasa）</p>
+          </div>
+        </li>
+        <li>
+          <div class="information">
+            <h1 class="item">COLLEGE</h1>
+            <p class="answer">Osaka University</p>
+            <div class="clear"></div>
+          </div>
+        </li>
+        <li>
+          <div class="information">
+            <h1 class="item">BIRTHDAY</h1>
+            <p class="answer">January 17th,1999</p>
+          </div>
+        </li>
+        <li>
+          <div class="information">
+            <h1 class="item">ADDRESS</h1>
+            <p class="answer">大阪府池田市石橋</p>
+          </div>
+        </li>
+        <li>
+          <div class="information">
+            <h1 class="item">HOBBY</h1>
+            <p class="answer">Music, Billiard, Programming</p>
+          </div>
+        </li>
+      </ul>
+      <div class="clear"></div>
+      <div class="animation-wrapper">
+        <img class=animation id='mypic' src="img/picture1.png">
+        <script type="text/javascript">
+          var pics_src = new Array("img/picture1.png", "img/picture2.png", "img/picture3.png", "img/picture4.png");
+          var num = -1;
+          slideshow_timer();
+          function slideshow_timer(){
+            if(num==3){
+              num = 0;
+            }
+            else {
+              num++;
+            }
+            document.getElementById('mypic').src=pics_src[num];
+            setTimeout("slideshow_timer()", 3000);
+          }
+        </script>
+      </div>
+    </div>
+  </div>
+
+  <div class="comment" id="comment">
+    <div class="container">
+      <div class="title">
+        <div class="title-left"></div>
+        <div class="title-right">
+          <h1 class="title-heading">COMMENT</h1>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="center">
+        <div class="comment-wrapper">
+          <h1 class="comment-title">とにかく集中力がある。</h1>
+          <p>僕は高校時代に過酷な勉強生活を強いられてきました。１日８時間授業や１コマ９０分の長期講習を３年間受け続けた結果得られたものがこの集中力です。そのおかげで難解な数学の証明問題や高度なテクニックを要するプログラミングに対しても、じっくり熟考して正解に辿りつくことができています！
+          </p>
+        </div>
+      </div>
+      <div class="center">
+        <div class="comment-wrapper">
+          <h1 class="comment-title">周囲からの信頼。</h1>
+          <p>几帳面な性格で依頼されたタスクはできる限りすぐに実行します。そういった要領の良さが周りから評価され、これまでにアルバイト先や学校生活等で様々な重役を担ってきました。またどの領域においても常にトップを狙っていて、そういった向上心も周りに影響を及ぼしているのかもしれません。大学で入試順位が低かった僕はそれから学科トップになるべく必死に勉強して、最新の成績ではGPA4.0を取得しました。
+          </p>
+        </div>
+      </div>
+      <div class="center">
+        <div class="comment-wrapper">
+          <h1 class="comment-title">有言実行マン。</h1>
+          <p>一度目標として掲げたことは達成するまで絶対に諦めないのが僕の特徴です。僕の辞書に「妥協」という言葉は掲載されていません。妥協するということは自分の限界を自分で見定めてしまっていることと同値です。自分がどんな世界に出ても成功できるという自信を確かなものにしたいと思い、僕は今プログラミング初心者で未来電子のインターンをしています。ちなみに今掲げている目標は「既存の未来電子のシステムで何か一つでも自動化を実装すること」です！
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sns" id="sns">
+    <div class="container">
+      <div class="title">
+        <div class="title-left"></div>
+        <div class="title-right">
+          <h1 class="title-heading">SNS</h1>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="icon">
+        <h1 class="icon-name">facebook</h1>
+        <img class="icon-image" src="img/facebook.png">
+        <div class="click">
+          <a class="icon-link" href="https://www.facebook.com/profile.php?id=100040666963821">Click here.</a>
+        </div>
+      </div>
+      <div class="icon">
+        <h1 class="icon-name">twitter</h1>
+        <img class="icon-image" src="img/twitter.png">
+        <div class="click">
+          <a class="icon-link" href="https://twitter.com/saijojo0117">Click here.</a>
+        </div>
+      </div>
+      <div class="icon">
+        <h1 class="icon-name">instagram</h1>
+        <img class="icon-image" src="img/instagram.png">
+        <div class="click">
+          <a class="icon-link" href="https://www.instagram.com/saijojo110117/">Click here.</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container" id=inquiry>
+      <div class="title">
+        <div class="title-left"></div>
+        <div class="title-right">
+          <h1 class="title-heading">INQUIRY</h1>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="inquiries">
+        <div class="box1">
+          <h1 class="detail">name :</h1>
+          <div class="clear-right"></div>
+        </div>
+        <div class="box2">
+          <input class="reply" type="text" name="yourname" placeholder="Miraidenshi Taro">
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="inquiries">
+        <div class="box1">
+          <h1 class="detail">E-mail :</h1>
+          <div class="clear-right"></div>
+        </div>
+        <div class="box2">
+          <input class="reply" type="email" name="email" placeholder="miraidenshi@gmail.com">
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="inquiries">
+        <div class="box1">
+          <h1 class="detail">phone :</h1>
+          <div class="clear-right"></div>
+        </div>
+        <div class="box2">
+          <input class="reply" type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="090-####-###">
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="inquiries">
+        <div class="box1">
+          <h1 class="detail">contents :</h1>
+          <div class="clear-right"></div>
+        </div>
+        <div class="box3">
+          <textarea placeholder="Please write here." rows="4"></textarea>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="center">
+        <input class=submit-btn type="submit" value="submit">
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
